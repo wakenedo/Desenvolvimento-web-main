@@ -1,0 +1,61 @@
+body {
+    background: aqua;
+}
+
+.img1 {
+    transition: all 1s;
+    cursor: pointer
+}
+
+.img1:hover {
+    -webkit-transform: rotate3d(360deg);
+    transform: rotate(360deg);
+}
+
+.img2:hover {
+    -webkit-filter: blur(5px);
+    filter: blur(5px)
+}
+
+.img3 {
+    transition: all 05;
+    cursor: pointer;
+}
+
+.img3:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.img4 {
+    transition: all 0.5;
+    cursor: pointer;
+}
+
+.img4:hover {
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5) );
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5))
+}
+
+.img5 {
+    transition: all .5s;
+    border: 10px solid transparent
+}
+
+.img5:hover {
+    border: 10px solid #136497;
+    border-radius: 50%
+}
+.img6 {
+    transition: all .5s;
+    border: 10px solid #eeeeee;
+}
+
+.img6:hover{
+    border: 10px solid #781f40;
+    border-radius: 50%;
+    -webkit-filter: drop-shadow(15px 7px 1px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 7px 1px rgba(0,0,0,.5));
+    -webkit-transform: rotateZ(-360deg) scale(1.5);
+    transform: rotateZ(-360deg) scale(1.5);
+}

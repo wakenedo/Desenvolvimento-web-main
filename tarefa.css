@@ -1,0 +1,15 @@
+#conteudo  {
+    width: 200px;
+    height: 200px;
+    float: left;
+   background-color: beige; 
+   margin-left: 50px;
+}
+
+p {
+    font-size: 50px;
+}
+h1{
+    color: red;
+    font-size: 30px;
+}
