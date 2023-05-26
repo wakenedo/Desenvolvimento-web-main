@@ -1,137 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Number Display</title>
-  <style>
-    #output {
-      display: flex;
-      margin: 1px;
-      align-items: center;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Stylish Portfolio - Start Bootstrap Template</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- Simple line icons-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
+    rel="stylesheet" />
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+    rel="stylesheet" type="text/css" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
 </head>
 
-<body>
-  <section>
-    <label for="numberInput">Enter a number:</label>
-    <input type="number" id="numberInput">
-    <button onclick="displayNumbers()">Submit</button>
-    <div id="output"></div>
-    <p id="sum"></p>
-    <button onclick="clearResults()">Clear</button>
-    <script src="js/numbers.js"></script>
-  </section>
-
-  <section>
-    <h1>Temperature Conversion</h1>
-
-    <label for="temperatureInput">Enter a temperature:</label>
-    <input type="number" id="temperatureInput">
-    <button onclick="convertTemperature()">Convert</button>
-
-    <div id="result"></div>
-
-    <script src="js/temperature.js"></script>
-  </section>
-
-  <section>
-    <h1>Sales Calculator</h1>
-
-    <div>
-      <label for="product1Name">Product 1 Name:</label>
-      <input type="text" id="product1Name">
-      <label for="product1Value">Value:</label>
-      <input type="number" id="product1Value">
-      <label for="product1Quantity">Quantity Sold:</label>
-      <input type="number" id="product1Quantity">
+<body id="page-top">
+  <!-- Navigation-->
+  <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">Menu</li>
+      <li class="sidebar-nav-item"><a href="exercises/numberDisplay/index.html">Numbers</a></li>
+      <li class="sidebar-nav-item"><a href="exercises/fuelSpendingCalculator/index.html">Fuel Calculator</a></li>
+      <li class="sidebar-nav-item"><a href="exercises/salesCalculator/index.html">Sales Calculator</a></li>
+      <li class="sidebar-nav-item"><a href="exercises/temperatureConversor/index.html">Temperature Conversion</a></li>
+      <li class="sidebar-nav-item"><a href="exercises/floorPrice/index.html">Floor Pricing</a></li>
+      <li class="sidebar-nav-item"><a href="exercises/idealWeight/index.html">Ideal Weight</a></li>
+      <li class="sidebar-nav-item"><a href="exercises/flappyBird/index.html">Flappy Bird</a></li>
+    </ul>
+  </nav>
+  <!-- Header-->
+  <header class="masthead d-flex align-items-center">
+    <div class="container px-4 px-lg-5 text-center">
+      <h1 class="mb-1">Desenvolvimento Web</h1>
+      <h3 class="mb-5"><em>Exercícios dia 27/05/2023</em></h3>
+      <a class="btn btn-primary btn-xl" href="javaScript/index.html">Find Out More</a>
     </div>
-
-    <div>
-      <label for="product2Name">Product 2 Name:</label>
-      <input type="text" id="product2Name">
-      <label for="product2Value">Value:</label>
-      <input type="number" id="product2Value">
-      <label for="product2Quantity">Quantity Sold:</label>
-      <input type="number" id="product2Quantity">
-    </div>
-
-    <div>
-      <label for="product3Name">Product 3 Name:</label>
-      <input type="text" id="product3Name">
-      <label for="product3Value">Value:</label>
-      <input type="number" id="product3Value">
-      <label for="product3Quantity">Quantity Sold:</label>
-      <input type="number" id="product3Quantity">
-    </div>
-
-    <button onclick="calculateSales()">Calculate</button>
-    <p id="totalSales"></p>
-
-    <script src="js/salesCalculator.js"></script>
-  </section>
-
-  <section>
-    <h1>Fuel Spending Calculator</h1>
-
-    <div>
-      <label for="kilometers">Kilometers Ran:</label>
-      <input type="number" id="kilometers">
-    </div>
-
-    <div>
-      <label for="fuelValue">Fuel Value:</label>
-      <input type="number" id="fuelValue">
-    </div>
-
-    <button onclick="calculateSpending()">Calculate</button>
-    <p id="spending"></p>
-
-    <script src="js/fuelSpendingCalculator.js"></script>
-  </section>
-
-  <section>
-    <h1>Floor Cost Calculator</h1>
-
-    <div>
-      <label for="width">Width (in meters):</label>
-      <input type="number" id="width">
-    </div>
-
-    <div>
-      <label for="height">Height (in meters):</label>
-      <input type="number" id="height">
-    </div>
-
-    <button onclick="calculateCost()">Calculate</button>
-    <p id="cost"></p>
-
-    <script src="js/floorPrice.js"></script>
-  </section>
-
-  <section>
-    <h1>Ideal Weight Calculator</h1>
-
-    <div>
-      <label>
-        <input type="radio" name="sex" value="male"> Male
-      </label>
-      <label>
-        <input type="radio" name="sex" value="female"> Female
-      </label>
-    </div>
-
-    <div>
-      <label for="height">Height (in centimeters):</label>
-      <input type="number" id="_height" step="0.01">
-    </div>
-
-    <button onclick="calculateIdealWeight()">Calculate</button>
-    <p id="idealWeight"></p>
-
-    <script src="js/idealWeight.js"></script>
-
-  </section>
+  </header>
+  <!-- About-->
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

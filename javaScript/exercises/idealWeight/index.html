@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ideal Weight Calculator</title>
+</head>
+
+<body>
+  <section>
+    <h1>Ideal Weight Calculator</h1>
+
+    <div>
+      <label>
+        <input type="radio" name="sex" value="male"> Male
+      </label>
+      <label>
+        <input type="radio" name="sex" value="female"> Female
+      </label>
+    </div>
+
+    <div>
+      <label for="height">Height (in centimeters):</label>
+      <input type="number" id="_height" step="0.01">
+    </div>
+
+    <button onclick="calculateIdealWeight()">Calculate</button>
+    <p id="idealWeight"></p>
+
+    <script src="js/idealWeight.js"></script>
+
+  </section>
+</body>
+
+</html>
