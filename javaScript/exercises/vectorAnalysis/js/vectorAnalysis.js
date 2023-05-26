@@ -13,6 +13,7 @@ function createInputFields() {
     input.id = `value${i}`;
     inputFieldsDiv.appendChild(label);
     inputFieldsDiv.appendChild(input);
+    inputFieldsDiv.appendChild(document.createElement('br'));
   }
 }
 
